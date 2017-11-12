@@ -54,6 +54,6 @@ if __name__ == '__main__':
         all_data.append(my_data)
 
     myfile = open('001.csv', 'w')
-    wr = csv.writer(myfile, delimiter=';')
+    wr = csv.writer(myfile, delimiter=',')
     wr.writerows([''.join(c[0:])] for c in all_data)
     myfile.close()
